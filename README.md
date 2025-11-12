@@ -1,4 +1,4 @@
-Автомагазин — backend API на FastAPI (MVP)
+Автомагазин — backend API на FastAPI
 
 Запуск (Windows PowerShell):
 
@@ -12,6 +12,5 @@ pip install -r requirements.txt
 # 3. Запустить приложение
 uvicorn app.main:app --reload --port 8000
 
-API автоматически доступно по http://127.0.0.1:8000/docs
+API автоматически доступно по ссылке http://127.0.0.1:8000/docs
 
-Примечание: проект использует SQLite по умолчанию. Файлы и миграции будут в папке `app/db`.
