@@ -1,9 +1,7 @@
-
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from app.db.database import init_db
 from app.routers import auth, products, categories, cart, orders, reviews, users
-
 
 app = FastAPI(title="Autoshop API")
 
@@ -27,3 +25,4 @@ async def on_startup():
 def root():
     """Redirect root to the interactive docs."""
     return RedirectResponse(url="/docs")
+

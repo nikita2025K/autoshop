@@ -203,6 +203,6 @@ class Review(SQLModel, table=True):
 		except Exception:
 			raise ValidationError("Рейтинг должен быть целым числом")
 		if iv < 1 or iv > 5:
-			raise ValidationError("Рейтинг должен быть между 1 и 5")
+			raise ValidationError("Рейтинг должен быть >= 1 и <= 5")
 		return iv
 
